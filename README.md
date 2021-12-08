@@ -4,7 +4,7 @@ There are two variants of this script. Read below for more info.
 2. [No-Debloat Variant](https://github.com/haridhayal11/WindowsOptimizer#no-debloat-version-keeps-microsoft-apps)
 
 
-## Supported Windows Variants
+## Supported Windows Versions
 - Windows 11
 - Windows 10 20H2 or later
 
