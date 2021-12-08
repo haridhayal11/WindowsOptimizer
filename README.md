@@ -17,7 +17,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 - Removes 
     - OneDrive
     - Cortana
-    - Bloat (Check here for a list of [bloat](https://github.com/haridhayal11/WindowsOptimizer/blob/main/optimizer.ps1#L84))
+    - Bloat (Check [here](https://github.com/haridhayal11/WindowsOptimizer/blob/main/optimizer.ps1#L84) for a list)
 - Runs O&O Shutup with Recommended Settings
 - Disables 
     - Telemetry
