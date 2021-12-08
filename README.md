@@ -1,18 +1,15 @@
 # WindowsOptimizer
- Enhance the Windows Experience!
+There are two versions of this script. Read below for more info.
+
 
 ## Supported Windows Versions
 - Windows 11
 - Windows 10 20H2 or later
 
-## How to Use
-1. Open Windows Terminal/Powershell (as Adminstrator)
-2. Paste the string below into Windows Terminal/Powershell.
-```
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
-```
 
-## What it does?
+## Debloat Version (Removes Microsoft Apps)
+
+### What it does?
 - Creates a System Restore Point.
 - Removes 
     - OneDrive
@@ -49,3 +46,23 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 - Hides 3D Objects icon from This PC
 - Removes Meet Now from taskbar
 - Shows known file extensions
+
+### How to Use Debloat Version
+1. Open Windows Terminal/Powershell (as Adminstrator)
+2. Paste the string below into Windows Terminal/Powershell.
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
+```
+
+
+## No-Debloat Version (Keeps Microsoft Apps)
+
+### What it does?
+- Everything from Debloat version except removal of Microsoft Apps.
+
+### How to Use No-Debloat Version
+1. Open Windows Terminal/Powershell (as Adminstrator)
+2. Paste the string below into Windows Terminal/Powershell.
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJYM'))
+```
