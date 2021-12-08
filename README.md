@@ -20,7 +20,7 @@ There are two variants of this script. Read below for more info.
 - Runs O&O Shutup with Recommended Settings
 - Disables 
     - Telemetry
-    - Wifi Sense
+    - Wifi Sense (Wifi will still work)
     - Location Tracking
     - Feedback
     - Tailored Experiences
