@@ -471,4 +471,4 @@ Get-Service -Name $service -ErrorAction SilentlyContinue | Set-Service -StartupT
 }
 
 Write-Host "Tweaks Applied- Please Reboot"
-
+)
