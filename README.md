@@ -1,7 +1,7 @@
 # WindowsOptimizer
 There are two variants of this script. Read below for more info.
-1. [Debloat Variant](https://github.com/haridhayal11/WindowsOptimizer#debloat-version-removes-microsoft-apps)
-2. [No-Debloat Variant](https://github.com/haridhayal11/WindowsOptimizer#no-debloat-version-keeps-microsoft-apps)
+1. Debloat Variant
+2. No-Debloat Variant
 
 
 ## Supported Windows Versions
@@ -9,7 +9,7 @@ There are two variants of this script. Read below for more info.
 - Windows 10 20H2 or later
 
 
-## Debloat Variant (Removes Microsoft Apps)
+## 1. Debloat Variant (Removes Microsoft Apps)
 
 ### What it does?
 - Creates a System Restore Point.
@@ -49,7 +49,7 @@ There are two variants of this script. Read below for more info.
 - Removes Meet Now from taskbar
 - Shows known file extensions
 
-### How to Use Debloat Variant
+### 2.  How to Use Debloat Variant
 1. Open Windows Terminal/Powershell (as Adminstrator)
 2. Paste the string below into Windows Terminal/Powershell.
 ```
