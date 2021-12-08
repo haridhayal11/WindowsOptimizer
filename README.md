@@ -1,17 +1,18 @@
 # WindowsOptimizer
  Enhance the Windows Experience!
 
-# How to Use
+## Supported Windows Versions
+- Windows 11
+- Windows 10 20H2 or later
+
+## How to Use
 1. Open Windows Terminal/Powershell (as Adminstrator)
 2. Paste the string below into Windows Terminal/Powershell.
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 ```
-# Supported Windows Versions
-- Windows 11
-- Windows 10 20H2 or later
 
-# What it does?
+## What it does?
 - Creates a System Restore Point.
 - Removes 
     - OneDrive
