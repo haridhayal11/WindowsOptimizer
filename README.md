@@ -49,7 +49,7 @@ There are two variants of this script. Read below for more info.
 - Removes Meet Now from taskbar
 - Shows known file extensions
 
-### 2.  How to Use Debloat Variant
+### How to Use Debloat Variant
 1. Open Windows Terminal/Powershell (as Adminstrator)
 2. Paste the string below into Windows Terminal/Powershell.
 ```
@@ -57,7 +57,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 ```
 
 
-## No-Debloat Variant (Keeps Microsoft Apps)
+## 2. No-Debloat Variant (Keeps Microsoft Apps)
 
 ### What it does?
 - Everything from Debloat Variant except removal of Microsoft Apps.
