@@ -1,15 +1,15 @@
 # WindowsOptimizer
- Enhance the Windows Experience
+ Enhance the Windows Experience!
 
 # How to Use
-1. Open Powershell (as Adminstrator)
-2. Paste the string below into Powershell.
+1. Open Windows Terminal/Powershell (as Adminstrator)
+2. Paste the string below into Windows Terminal/Powershell.
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 ```
 # Supported Windows Versions
-Windows 11 
-Windows 10 20H2 or later
+- Windows 11
+- Windows 10 20H2 or later
 
 # What it does?
 - Creates a System Restore Point.
@@ -48,4 +48,3 @@ Windows 10 20H2 or later
 - Hides 3D Objects icon from This PC
 - Removes Meet Now from taskbar
 - Shows known file extensions
-
