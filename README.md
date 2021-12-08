@@ -1,6 +1,16 @@
 # WindowsOptimizer
  Enhance the Windows Experience
 
+# How to Use
+1. Open Powershell (as Adminstrator)
+2. Paste the string below into Powershell.
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
+```
+# Supported Windows Versions
+Windows 11 
+Windows 10 20H2 or later
+
 # What it does?
 - Creates a System Restore Point.
 - Removes 
@@ -39,4 +49,3 @@
 - Removes Meet Now from taskbar
 - Shows known file extensions
 
-# How to Use

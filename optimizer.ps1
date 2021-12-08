@@ -8,21 +8,20 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 	Exit
 }
 
-
-Write-Host -ForegroundColor DarkCyan " _       ___           __                      ____        __  _           _"                
-Write-Host -ForegroundColor DarkCyan "| |     / (_)___  ____/ /___ _      _______   / __ \____  / /_(_)___ ___  (_)___  ___  _____"
-Write-Host -ForegroundColor DarkCyan "| | /| / / / __ \/ __  / __ \ | /| / / ___/  / / / / __ \/ __/ / __ `__ \/ /_  / / _ \/ ___/"
-Write-Host -ForegroundColor DarkCyan "| |/ |/ / / / / / /_/ / /_/ / |/ |/ (__  )  / /_/ / /_/ / /_/ / / / / / / / / /_/  __/ /"    
-Write-Host -ForegroundColor DarkCyan "|__/|__/_/_/ /_/\__,_/\____/|__/|__/____/   \____/ .___/\__/_/_/ /_/ /_/_/ /___/\___/_/"    
-Write-Host -ForegroundColor DarkCyan "                                                /_/"                                         
-Write-Host -ForegroundColor DarkCyan "                                               /_/"                                      	  
-Write-Host -ForegroundColor DarkCyan ""												  
-Write-Host -ForegroundColor DarkCyan "    __             __  __           _     ____                      __"
-Write-Host -ForegroundColor DarkCyan "   / /_  __  __   / / / /___ ______(_)___/ / /_  ____ ___  ______ _/ /"
-Write-Host -ForegroundColor DarkCyan "  / __ \/ / / /  / /_/ / __ `/ ___/ / __  / __ \/ __ `/ / / / __ `/ /" 
-Write-Host -ForegroundColor DarkCyan " / /_/ / /_/ /  / __  / /_/ / /  / / /_/ / / / / /_/ / /_/ / /_/ / /"
-Write-Host -ForegroundColor DarkCyan "/_.___/\__, /  /_/ /_/\__,_/_/  /_/\__,_/_/ /_/\__,_/\__, /\__,_/_/"
-Write-Host -ForegroundColor DarkCyan "      /____/                                        /____/"
+Write-Host -ForegroundColor DarkYellow " _       ___           __                      ____        __  _           _"                
+Write-Host -ForegroundColor DarkYellow "| |     / (_)___  ____/ /___ _      _______   / __ \____  / /_(_)___ ___  (_)___  ___  _____"
+Write-Host -ForegroundColor DarkYellow "| | /| / / / __ \/ __  / __ \ | /| / / ___/  / / / / __ \/ __/ / __ `__ \/ /_  / / _ \/ ___/"
+Write-Host -ForegroundColor DarkYellow "| |/ |/ / / / / / /_/ / /_/ / |/ |/ (__  )  / /_/ / /_/ / /_/ / / / / / / / / /_/  __/ /"    
+Write-Host -ForegroundColor DarkYellow "|__/|__/_/_/ /_/\__,_/\____/|__/|__/____/   \____/ .___/\__/_/_/ /_/ /_/_/ /___/\___/_/"    
+Write-Host -ForegroundColor DarkYellow "                                                /_/"                                         
+Write-Host -ForegroundColor DarkYellow "                                               /_/"                                      	  
+Write-Host -ForegroundColor DarkYellow ""												  
+Write-Host -ForegroundColor DarkYellow "    __             __  __           _     ____                      __"
+Write-Host -ForegroundColor DarkYellow "   / /_  __  __   / / / /___ ______(_)___/ / /_  ____ ___  ______ _/ /"
+Write-Host -ForegroundColor DarkYellow "  / __ \/ / / /  / /_/ / __ `/ ___/ / __  / __ \/ __ `/ / / / __ `/ /" 
+Write-Host -ForegroundColor DarkYellow " / /_/ / /_/ /  / __  / /_/ / /  / / /_/ / / / / /_/ / /_/ / /_/ / /"
+Write-Host -ForegroundColor DarkYellow "/_.___/\__, /  /_/ /_/\__,_/_/  /_/\__,_/_/ /_/\__,_/\__, /\__,_/_/"
+Write-Host -ForegroundColor DarkYellow "      /____/                                        /____/"
 
 Start-Sleep -seconds 2
 
