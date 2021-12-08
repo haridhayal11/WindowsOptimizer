@@ -162,14 +162,13 @@ $Bloatware = @(
 "*HiddenCity*"
 "*AdobePhotoshopExpress*"
 
-Write-Host "Removing Bloatware"
-foreach ($Bloat in $Bloatware) {
-Get-AppxPackage -Name $Bloat| Remove-AppxPackage
-Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
-Write-Host "Trying to remove $Bloat."
-}
-
-Write-Host "Finished Removing Bloatware Apps"
+#Write-Host "Removing Bloatware"
+#foreach ($Bloat in $Bloatware) {
+#Get-AppxPackage -Name $Bloat| Remove-AppxPackage
+#Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
+#Write-Host "Trying to remove $Bloat."
+#}
+#Write-Host "Finished Removing Bloatware Apps"
 
 #Tweaks
 Write-Host "Running O&O Shutup with Recommended Settings"
