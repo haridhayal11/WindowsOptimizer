@@ -36,7 +36,6 @@ There are two variants of this script. Read below for more info.
     - Windows Update automatic restart
     - Driver offering through Windows Update
     - News and Interests
-    - Diagnostics Tracking Service
     - AutoLogger file and restricting directory
     - Unnessary services
 
