@@ -25,10 +25,6 @@ Write-Host -ForegroundColor DarkYellow "      /____/                            
 
 Start-Sleep -seconds 2
 
-Write-Host "Creating Restore Point.." 
-Enable-ComputerRestore -Drive "C:\"
-Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
-
 Write-Host "Disabling OneDrive..."
 winget uninstall Microsoft.OneDrive
 If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive")) {
@@ -57,26 +53,6 @@ Remove-Item -Path "HKCR:\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse 
 Remove-Item -Path "HKCR:\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse -ErrorAction SilentlyContinue
 Write-Host "Disabled OneDrive"
 
-Write-Host "Disabling Cortana..."
-winget uninstall Cortana
-If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings")) {
-New-Item -Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings" -Force | Out-Null
-}
-Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings" -Name "AcceptedPrivacyPolicy" -Type DWord -Value 0
-If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization")) {
-New-Item -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization" -Force | Out-Null
-}
-Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization" -Name "RestrictImplicitTextCollection" -Type DWord -Value 1
-Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization" -Name "RestrictImplicitInkCollection" -Type DWord -Value 1
-If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore")) {
-New-Item -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" -Force | Out-Null
-}
-Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" -Name "HarvestContacts" -Type DWord -Value 0
-If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search")) {
-New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" -Force | Out-Null
-}
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" -Name "AllowCortana" -Type DWord -Value 0
-Write-Host "Disabled Cortana"
 
 
 # Remove Other Bloat
@@ -390,7 +366,7 @@ $services = @(
 #"WlanSvc"  # WLAN AutoConfig
 "WMPNetworkSvc"# Windows Media Player Network Sharing Service
 #"wscsvc"   # Windows Security Center Service
-"WSearch"  # Windows Search
+#"WSearch"  # Windows Search
 "XblAuthManager"   # Xbox Live Auth Manager
 "XblGameSave"  # Xbox Live Game Save Service
 "XboxNetApiSvc"# Xbox Live Networking Service
