@@ -11,7 +11,7 @@ There are many variants of this script. Read below for more info.
 - Windows 10 20H2 or later (testing)
 
 - Windows 10 LTSC 2019,2021 ([Here](https://github.com/haridhayal11/WindowsOptimizer/tree/win10-ltsc))
-- 
+
 ## 1. Debloat Variant (Removes Microsoft Apps)
 
 ### What it does?
