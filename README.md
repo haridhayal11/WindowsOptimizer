@@ -3,8 +3,8 @@ There are many variants of this script. Read below for more info.
 
 ## Supported Windows Versions
 - Windows 11
-    1. Debloat Variant
-    2. No-Debloat Variant
+    1. Debloat Variant ([Here](https://github.com/haridhayal11/WindowsOptimizer#1-windows-11-debloat-variant-removes-microsoft-apps))
+    2. No-Debloat Variant ([Here](https://github.com/haridhayal11/WindowsOptimizer#2-windows-11--no-debloat-variant-keeps-microsoft-apps))
 
 - Windows 10 20H2 or later (testing)
 
