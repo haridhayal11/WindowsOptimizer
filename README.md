@@ -1,14 +1,17 @@
 # WindowsOptimizer
-There are two variants of this script. Read below for more info.
-1. Debloat Variant
-2. No-Debloat Variant
+There are many variants of this script. Read below for more info.
+
 
 
 ## Supported Windows Versions
 - Windows 11
-- Windows 10 20H2 or later
+    1. Debloat Variant
+    2. No-Debloat Variant
 
+- Windows 10 20H2 or later (testing)
 
+- Windows 10 LTSC 2019,2021 ([Here](https://github.com/haridhayal11/WindowsOptimizer/tree/win10-ltsc))
+- 
 ## 1. Debloat Variant (Removes Microsoft Apps)
 
 ### What it does?
