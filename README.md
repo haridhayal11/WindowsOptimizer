@@ -1,8 +1,6 @@
 # WindowsOptimizer
 There are many variants of this script. Read below for more info.
 
-
-
 ## Supported Windows Versions
 - Windows 11
     1. Debloat Variant
@@ -12,7 +10,7 @@ There are many variants of this script. Read below for more info.
 
 - Windows 10 LTSC 2019,2021 ([Here](https://github.com/haridhayal11/WindowsOptimizer/tree/win10-ltsc))
 
-## 1. Debloat Variant (Removes Microsoft Apps)
+## 1. Windows 11 Debloat Variant (Removes Microsoft Apps)
 
 ### What it does?
 - Creates a System Restore Point.
@@ -58,7 +56,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
 ```
 
 
-## 2. No-Debloat Variant (Keeps Microsoft Apps)
+## 2. Windows 11  No-Debloat Variant (Keeps Microsoft Apps)
 
 ### What it does?
 - Everything from Debloat Variant except removal of Microsoft Apps.
