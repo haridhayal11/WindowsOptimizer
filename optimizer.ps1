@@ -162,10 +162,9 @@ $Bloatware = @(
 "*HiddenCity*"
 "*AdobePhotoshopExpress*"
 
-Write-Host "Removing Bloatware"
+Write-Host "Removing Bloatware using winget"
 foreach ($Bloat in $Bloatware) {
-Get-AppxPackage -Name $Bloat| Remove-AppxPackage
-Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
+winget uninstall "$Bloat"
 Write-Host "Trying to remove $Bloat."
 }
 
