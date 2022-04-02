@@ -29,6 +29,25 @@ Write-Host "Creating Restore Point.."
 Enable-ComputerRestore -Drive "C:\"
 Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 
+$hasPackageManager = Get-AppPackage -name 'Microsoft.DesktopAppInstaller'
+if (!$hasPackageManager -or [version]$hasPackageManager.Version -lt [version]"1.10.0.0") {
+    "Installing winget Dependencies"
+    Add-AppxPackage -Path 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx'
+
+    $releases_url = 'https://api.github.com/repos/microsoft/winget-cli/releases/latest'
+
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $releases = Invoke-RestMethod -uri $releases_url
+    $latestRelease = $releases.assets | Where { $_.browser_download_url.EndsWith('msixbundle') } | Select -First 1
+
+    "Installing winget from $($latestRelease.browser_download_url)"
+    Add-AppxPackage -Path $latestRelease.browser_download_url
+}
+else {
+    "winget already installed"
+}
+
+
 Write-Host "Disabling OneDrive..."
 winget uninstall Microsoft.OneDrive
 If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive")) {
@@ -164,11 +183,17 @@ $Bloatware = @(
 
 Write-Host "Removing Bloatware using winget"
 foreach ($Bloat in $Bloatware) {
-winget uninstall "$Bloat"
+Write-Host "Uninstalling:" $Bloat
+Get-AppxPackage -allusers $Bloat | Remove-AppxPackage
+}
+Write-Host "Finished Removing Bloatware Apps"
+
+Write-Host "Removing Bloatware using old method"
+foreach ($Bloat in $Bloatware) {
+Get-AppxPackage -Name $Bloat| Remove-AppxPackage
+Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
 Write-Host "Trying to remove $Bloat."
 }
-
-Write-Host "Finished Removing Bloatware Apps"
 
 #Tweaks
 Write-Host "Running O&O Shutup with Recommended Settings"
